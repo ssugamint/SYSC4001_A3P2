@@ -4,12 +4,12 @@ This project contains the programs for Part 2A and Part 2B of assignment 3. Part
 # Compilation Instructions
 To compile Part 2A:
 
-g++ -std=c++17 -Wall -O2 A3_P2_A.cpp -pthread -o A3_P2_A
+g++ -std=c++17 -Wall -O2 A3_P2_A_101262847_101301514.cpp -pthread -o A3_P2_A_101262847_101301514
 
 
 To compile Part 2B:
 
-g++ -std=c++17 -Wall -O2 A3_P2_B.cpp -pthread -o A3_P2_B
+g++ -std=c++17 -Wall -O2 A3_P2_B_101262847_101301514.cpp -pthread -o A3_P2_B_101262847_101301514
 
 
 Both programs require pthread for multithreading. No additional libraries are needed.
@@ -17,9 +17,9 @@ Both programs require pthread for multithreading. No additional libraries are ne
 # Folder
 The folder should contain:
 
-A3_P2_A.cpp
+A3_P2_A_101262847_101301514.cpp
 
-A3_P2_B.cpp
+A3_P2_B_101262847_101301514.cpp
 
 rubric.txt
 
@@ -28,17 +28,17 @@ exams/ (a directory containing exam0001.txt to exam0020.txt)
 # How to Run
 To run Part 2A with 3 TAs:
 
-./A3_P2_A 3
+./A3_P2_A_101262847_101301514 3
 
 
 To run Part 2B with 3 TAs:
 
-./A3_P2_B 3
+./A3_P2_B_101262847_101301514 3
 
 
 Any number of TAs is possible (>=1). For example:
 
-./A3_P2_B 5
+./A3_P2_B_101262847_101301514 5
 
 
 # Test Cases
@@ -47,14 +47,14 @@ The test cases for this assignment are running the program with a different numb
 ## Part 2A:
 1 TA:
 
-./A2_P2_A 1
+./A3_P2_A_101262847_101301514 1
 
 Expected outpt: No race conditions (only one TA accesses shared memory).
 
 
 3 TAs:
 
-./A2_P2_A 3
+./A3_P2_A_101262847_101301514 3
 
 Expected output: Chaotic output, race conditions, inconsistent rubric values.
 
@@ -62,13 +62,13 @@ Expected output: Chaotic output, race conditions, inconsistent rubric values.
 ## Part 2B:
 3 TAs:
 
-./A2_P2_B 3
+./A3_P2_B_101262847_101301514 3
 
-Expected output: Ordered and consistent behavior. Semaphore prevents races.
+Expected output: Consistent behavior. Semaphore prevents races.
 
 
 5 TAs:
 
-./A2_P2_B 5
+./A3_P2_B_101262847_101301514 5
 
-Expected output: Still consistent. Semaphore continues to enforce mutual exclusion.
+Expected output: Consistent behavior. Semaphore prevents races.
