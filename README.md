@@ -44,7 +44,7 @@ Any number of TAs is possible (>=1). For example:
 # Test Cases
 The test cases for this assignment are running the program with a different numbers of TA processes and observing the behavior.
 
-## Part 2A:
+### Part 2A:
 1 TA:
 
 ./A3_P2_A_101262847_101301514 1
@@ -59,7 +59,7 @@ Expected outpt: No race conditions (only one TA accesses shared memory).
 Expected output: Chaotic output, race conditions, inconsistent rubric values.
 
 
-## Part 2B:
+### Part 2B:
 3 TAs:
 
 ./A3_P2_B_101262847_101301514 3
