@@ -39,3 +39,36 @@ To run Part 2B with 3 TAs:
 Any number of TAs is possible (>=1). For example:
 
 ./A3_P2_B 5
+
+
+# Test Cases
+The test cases for this assignment are running the program with a different numbers of TA processes and observing the behavior.
+
+## Part 2A:
+1 TA:
+
+./A2_P2_A 1
+
+Expected outpt: No race conditions (only one TA accesses shared memory).
+
+
+3 TAs:
+
+./A2_P2_A 3
+
+Expected output: Chaotic output, race conditions, inconsistent rubric values.
+
+
+## Part 2B:
+3 TAs:
+
+./A2_P2_B 3
+
+Expected output: Ordered and consistent behavior. Semaphore prevents races.
+
+
+5 TAs:
+
+./A2_P2_B 5
+
+Expected output: Still consistent. Semaphore continues to enforce mutual exclusion.
